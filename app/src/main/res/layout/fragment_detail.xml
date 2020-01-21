@@ -7,10 +7,15 @@
         <variable
             name="dog"
             type="com.laam.dogandroidjetpacknew.model.DogBreed" />
+
+        <variable
+            name="palette"
+            type="com.laam.dogandroidjetpacknew.model.DogPalette" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:background="@{palette.color}"
         android:layout_height="match_parent"
         tools:context=".view.DetailFragment">
 
