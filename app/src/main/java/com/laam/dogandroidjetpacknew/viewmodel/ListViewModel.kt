@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import com.laam.dogandroidjetpacknew.model.DogApiService
 import com.laam.dogandroidjetpacknew.model.DogBreed
 import com.laam.dogandroidjetpacknew.model.DogDatabase
+import com.laam.dogandroidjetpacknew.util.NotificationHelper
 import com.laam.dogandroidjetpacknew.util.SharedPreferenceHelper
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -65,6 +66,7 @@ class ListViewModel(application: Application) : BaseViewModel(application) {
                             Toast.LENGTH_SHORT
                         ).show()
                         storeDogsLocally(t)
+                        NotificationHelper(getApplication()).createNotification()
                     }
 
                     override fun onError(e: Throwable) {
