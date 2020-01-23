@@ -13,7 +13,10 @@
         <action
             android:id="@+id/actionDetailFragment"
             app:destination="@id/detailFragment" />
-     </fragment>
+        <action
+            android:id="@+id/actionSettings"
+            app:destination="@id/settingFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.laam.dogandroidjetpacknew.view.DetailFragment"
@@ -28,4 +31,8 @@
             android:defaultValue="0"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.laam.dogandroidjetpacknew.view.SettingFragment"
+        android:label="SettingFragment" />
 </navigation>
