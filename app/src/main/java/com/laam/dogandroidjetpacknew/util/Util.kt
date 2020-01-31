@@ -8,6 +8,8 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.laam.dogandroidjetpacknew.R
 
+val PERMISSION_SEND_SMS = 234
+
 fun Context.getProgressBarDrawable(): CircularProgressDrawable =
     CircularProgressDrawable(this).apply {
         strokeWidth = 10f
