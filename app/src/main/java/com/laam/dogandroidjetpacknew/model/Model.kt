@@ -43,7 +43,7 @@ data class DogPalette(
 )
 
 data class SmsInfo(
-    val to: String,
-    val text: String,
-    val imageUrl: String
+    var to: String,
+    var text: String,
+    var imageUrl: String?
 )

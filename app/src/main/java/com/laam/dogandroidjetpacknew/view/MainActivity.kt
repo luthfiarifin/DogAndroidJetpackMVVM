@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
     private fun notifyDetailFragment(permissionGranted: Boolean) {
         val activeFragment = fragment.childFragmentManager.primaryNavigationFragment
         if (activeFragment is DetailFragment) {
-            (activeFragment as DetailFragment).onPermissionResult(permissionGranted)
+            activeFragment.onPermissionResult(permissionGranted)
         }
     }
 }
